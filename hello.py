@@ -9,10 +9,10 @@ def index():
     return render_template('index.html')
 
 # rout for user
-@app.route('user/<name>')
+@app.route('/user/<name>')
 def user(name):
     return render_template('user.html',name=name)
 
 # starting the web server
-if __name__ == 'main':
+if __name__ == '__main__':
     app.run(debug=True)
